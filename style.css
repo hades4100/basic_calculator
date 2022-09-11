@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "operator operator left left right right"
+    "cal cal left2 left2 right2 right2";
+
+  gap: 10px;
+  padding: 10px;
+  margin: auto;
+  background-color: brown;
+}
+
+.grid-container > div {
+  background-color: wheat;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: operator;
+}
+.item3 {
+  grid-area: left;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: left2;
+}
+.item6 {
+  grid-area: right2;
+}
+.item7 {
+  grid-area: cal;
+}

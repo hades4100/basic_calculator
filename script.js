@@ -20,8 +20,8 @@ function calculate() {
 }
 
 function zero() {
-  num1 = undefined;
-  num2 = undefined;
+  document.getElementById("firstnumber").value = "";
+  document.getElementById("secondnumber").value = "";
   choice = undefined;
   document.getElementById("result").innerHTML = "";
 }

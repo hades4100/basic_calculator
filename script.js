@@ -1,6 +1,6 @@
 function calculate() {
-  var num1 = Number(document.getElementById("firstnumber").value);
-  var num2 = Number(document.getElementById("secondnumber").value);
+  let num1 = Number(document.getElementById("firstnumber").value);
+  let num2 = Number(document.getElementById("secondnumber").value);
   let choice = document.getElementById("opertaor").value;
   num1 = parseFloat(num1);
   num2 = parseFloat(num2);
@@ -24,4 +24,14 @@ function zero() {
   num2 = undefined;
   choice = undefined;
   document.getElementById("result").innerHTML = "";
+}
+
+function cal() {
+  let num1 = Number(document.getElementById("firstnumber").value);
+  let num2 = Number(document.getElementById("secondnumber").value);
+  if (isNaN(num1) || isNaN(num2)) {
+    alert("not a number");
+  } else {
+    calculate();
+  }
 }
